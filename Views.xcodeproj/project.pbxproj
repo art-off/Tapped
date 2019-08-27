@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		881EA02A22E49BAC0015283A /* GameControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 881EA02922E49BAC0015283A /* GameControlView.xib */; };
 		881EA02C22E4C75E0015283A /* GameControlViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881EA02B22E4C75E0015283A /* GameControlViewClass.swift */; };
 		88AE239222E053D500394A03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE239122E053D500394A03 /* AppDelegate.swift */; };
 		88AE239422E053D500394A03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE239322E053D500394A03 /* ViewController.swift */; };
@@ -29,7 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		881EA02922E49BAC0015283A /* GameControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameControlView.xib; sourceTree = "<group>"; };
 		881EA02B22E4C75E0015283A /* GameControlViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlViewClass.swift; sourceTree = "<group>"; };
 		88AE238E22E053D500394A03 /* Views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Views.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AE239122E053D500394A03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				88AE239A22E053D700394A03 /* LaunchScreen.storyboard */,
 				88AE239D22E053D700394A03 /* Info.plist */,
 				88C21C9E22E1EAB100614269 /* GameFieldView.swift */,
-				881EA02922E49BAC0015283A /* GameControlView.xib */,
 				881EA02B22E4C75E0015283A /* GameControlViewClass.swift */,
 			);
 			path = Views;
@@ -188,7 +185,6 @@
 			files = (
 				88AE239C22E053D700394A03 /* LaunchScreen.storyboard in Resources */,
 				88AE239922E053D700394A03 /* Assets.xcassets in Resources */,
-				881EA02A22E49BAC0015283A /* GameControlView.xib in Resources */,
 				88AE239722E053D500394A03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -358,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -373,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HM9WL9QKWM;
 				INFOPLIST_FILE = Views/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -390,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HM9WL9QKWM;
 				INFOPLIST_FILE = Views/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

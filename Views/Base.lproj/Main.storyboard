@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VfT-1M-1cJ" customClass="GameFieldView" customModule="Views" customModuleProvider="target">
-                                <rect key="frame" x="20" y="145" width="374" height="688"/>
+                                <rect key="frame" x="20" y="137" width="374" height="696"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="shapeSize">
@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcq-mv-caG" customClass="GameControlView" customModule="Views" customModuleProvider="target">
-                                <rect key="frame" x="20" y="44" width="374" height="79"/>
+                                <rect key="frame" x="20" y="44" width="374" height="71"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>

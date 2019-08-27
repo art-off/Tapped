@@ -126,7 +126,7 @@ class ViewController: UIViewController {
         
         updateUI()
         
-        gameControl.startStopHandler = { [weak self] in
+        gameControl.startStopHagdler = { [weak self] in
             self?.actionButtonTapped()
         }
         
