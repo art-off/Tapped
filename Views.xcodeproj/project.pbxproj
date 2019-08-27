@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		881EA02A22E49BAC0015283A /* GameControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 881EA02922E49BAC0015283A /* GameControlView.xib */; };
+		881EA02C22E4C75E0015283A /* GameControlViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881EA02B22E4C75E0015283A /* GameControlViewClass.swift */; };
 		88AE239222E053D500394A03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE239122E053D500394A03 /* AppDelegate.swift */; };
 		88AE239422E053D500394A03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE239322E053D500394A03 /* ViewController.swift */; };
 		88AE239722E053D500394A03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AE239522E053D500394A03 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		881EA02922E49BAC0015283A /* GameControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameControlView.xib; sourceTree = "<group>"; };
+		881EA02B22E4C75E0015283A /* GameControlViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlViewClass.swift; sourceTree = "<group>"; };
 		88AE238E22E053D500394A03 /* Views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Views.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AE239122E053D500394A03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88AE239322E053D500394A03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				88AE239A22E053D700394A03 /* LaunchScreen.storyboard */,
 				88AE239D22E053D700394A03 /* Info.plist */,
 				88C21C9E22E1EAB100614269 /* GameFieldView.swift */,
+				881EA02922E49BAC0015283A /* GameControlView.xib */,
+				881EA02B22E4C75E0015283A /* GameControlViewClass.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +188,7 @@
 			files = (
 				88AE239C22E053D700394A03 /* LaunchScreen.storyboard in Resources */,
 				88AE239922E053D700394A03 /* Assets.xcassets in Resources */,
+				881EA02A22E49BAC0015283A /* GameControlView.xib in Resources */,
 				88AE239722E053D500394A03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C21C9F22E1EAB100614269 /* GameFieldView.swift in Sources */,
+				881EA02C22E4C75E0015283A /* GameControlViewClass.swift in Sources */,
 				88AE239422E053D500394A03 /* ViewController.swift in Sources */,
 				88AE239222E053D500394A03 /* AppDelegate.swift in Sources */,
 			);

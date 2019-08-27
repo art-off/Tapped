@@ -18,39 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время: 30 сек" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yH2-kU-yXr">
-                                <rect key="frame" x="20" y="64" width="114" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" maximumValue="100" stepValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="gn7-hy-sIq">
-                                <rect key="frame" x="300" y="60" width="94" height="29"/>
-                                <connections>
-                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="m1h-xx-N0p"/>
-                                </connections>
-                            </stepper>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsD-0o-Q4W">
-                                <rect key="frame" x="181.5" y="151" width="51" height="30"/>
-                                <state key="normal" title="Начать"/>
-                                <connections>
-                                    <action selector="actionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oHK-c1-RDH"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Последний счет: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZP-JI-kE1">
-                                <rect key="frame" x="132.5" y="841" width="149" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="0.5" maximumValue="100" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Py6-N6-Txk">
-                                <rect key="frame" x="300" y="97" width="94" height="29"/>
-                                <connections>
-                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="dBi-Ol-XXP"/>
-                                </connections>
-                            </stepper>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VfT-1M-1cJ" customClass="GameFieldView" customModule="Views" customModuleProvider="target">
-                                <rect key="frame" x="20" y="200" width="374" height="633"/>
+                                <rect key="frame" x="20" y="145" width="374" height="688"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="shapeSize">
@@ -58,44 +27,35 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время перемещения: 2.0 сек" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTy-2I-xfa">
-                                <rect key="frame" x="20" y="101" width="234" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Последний счет: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZP-JI-kE1">
+                                <rect key="frame" x="132.5" y="841" width="149" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcq-mv-caG" customClass="GameControlView" customModule="Views" customModuleProvider="target">
+                                <rect key="frame" x="20" y="44" width="374" height="79"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cZP-JI-kE1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5aJ-qB-iFe"/>
-                            <constraint firstItem="Py6-N6-Txk" firstAttribute="leading" secondItem="lTy-2I-xfa" secondAttribute="trailing" constant="46" id="6KY-jo-xSF"/>
-                            <constraint firstItem="JsD-0o-Q4W" firstAttribute="top" secondItem="Py6-N6-Txk" secondAttribute="bottom" constant="25" id="7ir-Eo-9JO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gn7-hy-sIq" secondAttribute="trailing" constant="20" id="C2I-pj-UGx"/>
-                            <constraint firstItem="yH2-kU-yXr" firstAttribute="centerY" secondItem="gn7-hy-sIq" secondAttribute="centerY" id="FI1-ZF-iwR"/>
-                            <constraint firstItem="lTy-2I-xfa" firstAttribute="top" secondItem="yH2-kU-yXr" secondAttribute="bottom" constant="16" id="GK3-Cn-jOb"/>
-                            <constraint firstItem="VfT-1M-1cJ" firstAttribute="top" secondItem="JsD-0o-Q4W" secondAttribute="bottom" constant="19" id="JKv-dw-GXQ"/>
-                            <constraint firstItem="Py6-N6-Txk" firstAttribute="top" secondItem="gn7-hy-sIq" secondAttribute="bottom" constant="8" id="LP0-3r-404"/>
+                            <constraint firstItem="VfT-1M-1cJ" firstAttribute="top" secondItem="hcq-mv-caG" secondAttribute="bottom" constant="22" id="7IQ-RG-Yf7"/>
+                            <constraint firstItem="hcq-mv-caG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Hin-zZ-0a6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VfT-1M-1cJ" secondAttribute="trailing" constant="20" id="MSF-FG-yPN"/>
-                            <constraint firstItem="yH2-kU-yXr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Nns-sw-0B4"/>
-                            <constraint firstItem="lTy-2I-xfa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VWO-ud-zQB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hcq-mv-caG" secondAttribute="trailing" constant="20" id="U3V-mh-eX7"/>
                             <constraint firstItem="VfT-1M-1cJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WUE-x0-sPa"/>
                             <constraint firstItem="cZP-JI-kE1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cfc-BM-wpN"/>
-                            <constraint firstItem="gn7-hy-sIq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="eIj-9e-i9l"/>
                             <constraint firstItem="cZP-JI-kE1" firstAttribute="top" secondItem="VfT-1M-1cJ" secondAttribute="bottom" constant="8" id="hgY-vQ-FYa"/>
-                            <constraint firstItem="JsD-0o-Q4W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nng-MV-UdD"/>
-                            <constraint firstItem="gn7-hy-sIq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yH2-kU-yXr" secondAttribute="trailing" id="yBx-5i-cjs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Py6-N6-Txk" secondAttribute="trailing" constant="20" id="yVl-lS-kma"/>
+                            <constraint firstItem="hcq-mv-caG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pn1-5W-G7T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="actionButton" destination="JsD-0o-Q4W" id="XtA-VQ-Ob9"/>
-                        <outlet property="displayDurationLabel" destination="lTy-2I-xfa" id="oVa-Xs-WfW"/>
+                        <outlet property="gameControl" destination="hcq-mv-caG" id="aDW-G4-sn2"/>
                         <outlet property="gameFieldView" destination="VfT-1M-1cJ" id="Jfe-hj-Ttt"/>
                         <outlet property="scoreLabel" destination="cZP-JI-kE1" id="1RW-jm-fQ1"/>
-                        <outlet property="stepper" destination="gn7-hy-sIq" id="zoK-P3-yFn"/>
-                        <outlet property="stepper2" destination="Py6-N6-Txk" id="mMl-M7-7mf"/>
-                        <outlet property="timeLabel" destination="yH2-kU-yXr" id="OD7-zq-PnU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

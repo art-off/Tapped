@@ -60,7 +60,6 @@ class GameFieldView: UIView {
         path.close()
         
         path.stroke()
-        path.fill()
         
         return path
         
