@@ -13,6 +13,7 @@
 		88AE239922E053D700394A03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AE239822E053D700394A03 /* Assets.xcassets */; };
 		88AE239C22E053D700394A03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AE239A22E053D700394A03 /* LaunchScreen.storyboard */; };
 		88AE23A722E053D700394A03 /* ViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE23A622E053D700394A03 /* ViewsTests.swift */; };
+		88C21C9F22E1EAB100614269 /* GameFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C21C9E22E1EAB100614269 /* GameFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		88AE23A222E053D700394A03 /* ViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AE23A622E053D700394A03 /* ViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsTests.swift; sourceTree = "<group>"; };
 		88AE23A822E053D700394A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88C21C9E22E1EAB100614269 /* GameFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				88AE239822E053D700394A03 /* Assets.xcassets */,
 				88AE239A22E053D700394A03 /* LaunchScreen.storyboard */,
 				88AE239D22E053D700394A03 /* Info.plist */,
+				88C21C9E22E1EAB100614269 /* GameFieldView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C21C9F22E1EAB100614269 /* GameFieldView.swift in Sources */,
 				88AE239422E053D500394A03 /* ViewController.swift in Sources */,
 				88AE239222E053D500394A03 /* AppDelegate.swift in Sources */,
 			);

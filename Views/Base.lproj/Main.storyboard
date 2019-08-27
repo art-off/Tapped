@@ -30,26 +30,14 @@
                                     <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="m1h-xx-N0p"/>
                                 </connections>
                             </stepper>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VfT-1M-1cJ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VfT-1M-1cJ" customClass="GameFieldView" customModule="Views" customModuleProvider="target">
                                 <rect key="frame" x="20" y="151" width="374" height="682"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Triangle" translatesAutoresizingMaskIntoConstraints="NO" id="8yx-fj-7MC">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                        <gestureRecognizers/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="Lgc-sF-dq6"/>
-                                            <constraint firstAttribute="width" constant="80" id="tCB-Ie-1iR"/>
-                                        </constraints>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="1df-P4-fJK" appends="YES" id="Ovu-7F-TDY"/>
-                                        </connections>
-                                    </imageView>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="8yx-fj-7MC" firstAttribute="top" secondItem="VfT-1M-1cJ" secondAttribute="top" id="BoL-wU-8oA"/>
-                                    <constraint firstItem="8yx-fj-7MC" firstAttribute="leading" secondItem="VfT-1M-1cJ" secondAttribute="leading" id="tTB-Hq-mv4"/>
-                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shapeSize">
+                                        <size key="value" width="80" height="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsD-0o-Q4W">
                                 <rect key="frame" x="181.5" y="109" width="51" height="30"/>
@@ -86,25 +74,14 @@
                     <connections>
                         <outlet property="actionButton" destination="JsD-0o-Q4W" id="XtA-VQ-Ob9"/>
                         <outlet property="gameFieldView" destination="VfT-1M-1cJ" id="Jfe-hj-Ttt"/>
-                        <outlet property="gameObject" destination="8yx-fj-7MC" id="7sb-sl-fWg"/>
                         <outlet property="scoreLabel" destination="cZP-JI-kE1" id="1RW-jm-fQ1"/>
-                        <outlet property="shapeX" destination="tTB-Hq-mv4" id="XbJ-0g-X4m"/>
-                        <outlet property="shapeY" destination="BoL-wU-8oA" id="wXN-QJ-Biu"/>
                         <outlet property="stepper" destination="gn7-hy-sIq" id="zoK-P3-yFn"/>
                         <outlet property="timeLabel" destination="yH2-kU-yXr" id="OD7-zq-PnU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="1df-P4-fJK">
-                    <connections>
-                        <action selector="objectTapped:" destination="BYZ-38-t0r" id="2gz-hz-Ots"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Triangle" width="200" height="200"/>
-    </resources>
 </document>
