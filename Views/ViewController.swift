@@ -11,17 +11,19 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
+    //
+    @IBOutlet weak var displayDurationLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var actionButton: UIButton!
+    //
+    @IBOutlet weak var stepper2: UIStepper!
     
     @IBOutlet weak var gameFieldView: GameFieldView!
     
     
     
     @IBAction func stepperChanged(_ sender: UIStepper) {
-        // выполняет только эту строку
-        // timeLabel.text = "Время: \(Int(sender.value)) сек"
         updateUI()
     }
     
@@ -40,7 +42,8 @@ class ViewController: UIViewController {
     private var gameTimer: Timer?
     private var gameTimeLeft: TimeInterval = 0
     private var timer: Timer?
-    private let displayDuration: TimeInterval = 2
+    //private let displayDuration: TimeInterval = 2
+    private var displayDuration: TimeInterval = 1
     
     private var score = 0
     
@@ -51,6 +54,7 @@ class ViewController: UIViewController {
         // обнуляем счетчик
         score = 0
         
+        displayDuration = stepper2.value
         // двигаем объект
         repositionImageWithTimer()
         
@@ -125,13 +129,16 @@ class ViewController: UIViewController {
     private func updateUI() {
         
         gameFieldView.isShapeHidden = !isGameActive
-        stepper.isEnabled = !isGameActive
+        stepper.isEnabled =  !isGameActive
+        stepper2.isEnabled = !isGameActive
         
         if isGameActive {
             timeLabel.text = "Осталось: \(Int(gameTimeLeft)) сек"
+            displayDurationLabel.text = "Время перемещения: \(displayDuration) сек"
             actionButton.setTitle("Остановить", for: .normal)
         } else {
             timeLabel.text = "Время: \(Int(stepper.value)) сек"
+            displayDurationLabel.text = "Время перемещения: \(stepper2.value) сек"
             actionButton.setTitle("Начать", for: .normal)
         }
         
